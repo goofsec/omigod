@@ -80,6 +80,5 @@ func exploit(target, command string) {
 	e := new(Envelope)
 	xml.Unmarshal(body, e)
 
-	fmt.Println(string(body))
-	fmt.Println(e.StdOut, "\n", e.ReturnCode)
+	fmt.Println(e.StdOut)
 }
